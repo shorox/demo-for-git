@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class FirstController {
 
   @GetMapping("/test")
-  public ResponseEntity test() {
-    return new ResponseEntity(HttpStatus.OK);
+  public ResponseEntity<String> test() {
+    return new ResponseEntity("test", HttpStatus.OK);
   }
 
   @GetMapping("/test2")
