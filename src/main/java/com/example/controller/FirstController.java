@@ -16,7 +16,7 @@ public class FirstController {
   }
 
   @GetMapping("/test2")
-  public ResponseEntity test2() {
-    return new ResponseEntity(HttpStatus.OK);
+  public ResponseEntity<String> test2() {
+    return new ResponseEntity("test2", HttpStatus.OK);
   }
 }
